@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cardápio – Açaí Exemplo</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#2A1236; --paper:#F4ECF7; --sign:#4B1C61; --signText:#F7E3FF; --accent:#6A2C87; }
+* { box-sizing:border-box; margin:0; }
+body { background:var(--paper); color:var(--ink); font:400 1rem/1.5 "Nunito Sans", system-ui, sans-serif; }
+.preview { background:var(--ink); color:var(--paper); text-align:center; padding:.5rem 1rem; font-size:.85rem; }
+header { background:var(--sign); color:var(--signText); padding:2rem 1.25rem 1.5rem; }
+header h1 { font:900 clamp(2rem,8vw,3.5rem)/.95 "Baloo 2", serif; max-width:40rem; margin:0 auto; }
+header p { max-width:40rem; margin:.5rem auto 0; opacity:.9; }
+nav { position:sticky; top:0; background:var(--paper); display:flex; gap:.5rem; overflow-x:auto; padding:.75rem 1.25rem;
+  border-bottom:1px solid color-mix(in srgb, var(--ink) 15%, transparent); }
+nav a { white-space:nowrap; text-decoration:none; color:var(--ink); border:1.5px solid var(--ink); border-radius:99px; padding:.3rem .9rem; font-weight:600; font-size:.9rem; }
+main { max-width:40rem; margin:0 auto; padding:0 1.25rem 4rem; }
+h2 { font:700 1.6rem/1.1 "Baloo 2", serif; margin:2rem 0 .75rem; }
+ul { list-style:none; padding:0; }
+li { display:flex; justify-content:space-between; gap:1rem; padding:.9rem 0; border-bottom:1px dashed color-mix(in srgb, var(--ink) 25%, transparent); }
+h3 { font:700 1.05rem/1.3 "Nunito Sans", sans-serif; } li p { font-size:.9rem; opacity:.8; }
+.r { display:flex; flex-direction:column; align-items:flex-end; gap:.35rem; white-space:nowrap; }
+.r a { background:var(--accent); color:#fff; text-decoration:none; font-weight:600; font-size:.85rem; padding:.3rem .8rem; border-radius:6px; }
+:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+footer { text-align:center; font-size:.85rem; opacity:.7; padding:2rem 1rem; }
+</style></head><body>
+
+<header><h1>Açaí Exemplo</h1><p>Cardápio · peça direto pelo WhatsApp (35) 99820-2344</p></header>
+<nav><a href="#s0">Copos</a><a href="#s1">Tigelas</a><a href="#s2">Adicionais</a></nav>
+<main><section id="s0"><h2>Copos</h2><ul><li><div><h3>Açaí 300 ml</h3><p>Com 2 acompanhamentos</p></div><div class="r"><b>R$ 16</b><a href="https://wa.me/5535998202344?text=Ol%C3%A1%21%20Quero%20pedir%3A%20A%C3%A7a%C3%AD%20300%20ml">Pedir</a></div></li><li><div><h3>Açaí 500 ml</h3><p>Com 3 acompanhamentos</p></div><div class="r"><b>R$ 22</b><a href="https://wa.me/5535998202344?text=Ol%C3%A1%21%20Quero%20pedir%3A%20A%C3%A7a%C3%AD%20500%20ml">Pedir</a></div></li></ul></section><section id="s1"><h2>Tigelas</h2><ul><li><div><h3>Tigela tropical</h3><p>Açaí, banana, morango e granola</p></div><div class="r"><b>R$ 28</b><a href="https://wa.me/5535998202344?text=Ol%C3%A1%21%20Quero%20pedir%3A%20Tigela%20tropical">Pedir</a></div></li></ul></section><section id="s2"><h2>Adicionais</h2><ul><li><div><h3>Leite ninho</h3></div><div class="r"><b>R$ 3</b><a href="https://wa.me/5535998202344?text=Ol%C3%A1%21%20Quero%20pedir%3A%20Leite%20ninho">Pedir</a></div></li><li><div><h3>Nutella</h3></div><div class="r"><b>R$ 5</b><a href="https://wa.me/5535998202344?text=Ol%C3%A1%21%20Quero%20pedir%3A%20Nutella">Pedir</a></div></li></ul></section></main>
+<footer>Cardápio digital feito pela Fachada.</footer>
+</body></html>
