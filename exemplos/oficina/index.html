@@ -39,6 +39,11 @@ h2 { font:700 clamp(1.6rem,4vw,2.3rem)/1.1 var(--display); margin-bottom:1.5rem;
 .info { display:grid; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr)); gap:2rem; }
 dl { display:grid; grid-template-columns:auto 1fr; gap:.4rem 1.5rem; }
 dt { font-weight:600; }
+.photo { margin:0 0 3rem; position:relative; }
+.photo img { width:100%; height:clamp(14rem,38vw,26rem); object-fit:cover; border-radius:6px; display:block; }
+.photo figcaption { position:absolute; right:.6rem; bottom:.5rem; font-size:.75rem; background:rgba(0,0,0,.55); color:#fff; padding:.15rem .5rem; border-radius:4px; }
+.gallery .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:.75rem; }
+.gallery img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:6px; display:block; }
 footer { padding:2rem 0 3rem; font-size:.9rem; opacity:.75; }
 .float { position:fixed; right:1rem; bottom:1rem; background:#1FAF5A; color:#fff; padding:.8rem 1.1rem; border-radius:99px;
   font-weight:600; text-decoration:none; box-shadow:0 4px 14px rgba(0,0,0,.25); }
@@ -59,19 +64,21 @@ footer { padding:2rem 0 3rem; font-size:.9rem; opacity:.75; }
     
   </div>
 </div></header>
+<div class="wrap"><figure class="photo"><img src="../../stock/oficina.jpg" alt="" width="1400" height="800"><figcaption>Imagem ilustrativa</figcaption></figure></div>
 <main>
 <section class="about"><div class="wrap"><h2>Sobre nós</h2><p>Diagnóstico honesto, serviço bem feito e prazo combinado antes de começar.</p></div></section>
 <section class="services"><div class="wrap"><h2>Serviços</h2><ul><li><h3>Mecânica geral</h3><p>Motor, câmbio, embreagem e suspensão.</p></li>
 <li><h3>Revisão preventiva</h3><p>Troca de óleo, filtros e checagem completa.</p></li>
 <li><h3>Freios</h3><p>Pastilhas, discos e fluido.</p></li>
 <li><h3>Diagnóstico</h3><p>Identificação do problema antes do orçamento.</p></li></ul></div></section>
+
 <section><div class="wrap info">
   <div><h2>Horário</h2><dl><dt>Seg a sex</dt><dd>08:00 às 18:00</dd><dt>Sáb</dt><dd>08:00 às 12:00</dd></dl></div>
   <div><h2>Onde estamos</h2><p>Av. Anhanguera, 3000, Goiânia, GO</p><p style="margin-top:.5rem">WhatsApp: <a href="https://wa.me/5535998202344?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Oficina%20Exemplo%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">(35) 99820-2344</a></p>
   <p style="margin-top:1rem"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Oficina%20Exemplo%20Av.%20Anhanguera%2C%203000%2C%20Goi%C3%A2nia%2C%20GO">Abrir no mapa</a></p></div>
 </div></section>
 </main>
-<footer><div class="wrap">© Oficina Exemplo. Site feito pela Fachada.</div></footer>
+<footer><div class="wrap">© Oficina Exemplo. Site feito pela Fachada. Foto ilustrativa: PattayaPatrol, CC BY-SA 4.0 (Wikimedia Commons).</div></footer>
 <a class="float" href="https://wa.me/5535998202344?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Oficina%20Exemplo%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." aria-label="Conversar no WhatsApp">WhatsApp</a>
 </body>
 </html>
