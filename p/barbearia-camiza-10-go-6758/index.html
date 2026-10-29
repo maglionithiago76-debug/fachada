@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Barbearia camiza 10 – GO</title>
+<title>Barbearia Camisa 10 – GO</title>
 <meta name="description" content="Corte, barba e cuidado, no seu horário. Rua Miguel de Assis, 1720, GO">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root { --ink:#1B2233; --paper:#E9ECF1; --sign:#1B2233; --signText:#E7C66A; --accent:#B8892B;
+:root { --ink:#1B2233; --paper:#E9ECF1; --sign:#1B2233; --signText:#E7C66A; --accent:#7A5A12;
   --display:"Big Shoulders Display", Georgia, serif; --body:"Figtree", system-ui, sans-serif; }
 * { box-sizing:border-box; margin:0; }
 body { background:var(--paper); color:var(--ink); font:400 1.0625rem/1.6 var(--body); }
@@ -39,6 +39,11 @@ h2 { font:700 clamp(1.6rem,4vw,2.3rem)/1.1 var(--display); margin-bottom:1.5rem;
 .info { display:grid; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr)); gap:2rem; }
 dl { display:grid; grid-template-columns:auto 1fr; gap:.4rem 1.5rem; }
 dt { font-weight:600; }
+.photo { margin:0 0 3rem; position:relative; }
+.photo img { width:100%; height:clamp(14rem,38vw,26rem); object-fit:cover; border-radius:6px; display:block; }
+.photo figcaption { position:absolute; right:.6rem; bottom:.5rem; font-size:.75rem; background:rgba(0,0,0,.55); color:#fff; padding:.15rem .5rem; border-radius:4px; }
+.gallery .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:.75rem; }
+.gallery img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:6px; display:block; }
 footer { padding:2rem 0 3rem; font-size:.9rem; opacity:.75; }
 .float { position:fixed; right:1rem; bottom:1rem; background:#1FAF5A; color:#fff; padding:.8rem 1.1rem; border-radius:99px;
   font-weight:600; text-decoration:none; box-shadow:0 4px 14px rgba(0,0,0,.25); }
@@ -50,31 +55,34 @@ footer { padding:2rem 0 3rem; font-size:.9rem; opacity:.75; }
 </head>
 <body>
 <aside class="preview" role="note">
-  <p>Esta é uma prévia gratuita criada pela Fachada para a Barbearia camiza 10. Fotos, textos e serviços são ajustados do jeito que você quiser.</p>
-  <a href="https://wa.me/5535998202344?text=Oi%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20Barbearia%20camiza%2010%20e%20quero%20conversar.">Quero este site</a>
+  <p>Versão para aprovação do site da Barbearia Camisa 10, feita pela Fachada. Quer mudar algo? É só pedir.</p>
+  <a href="https://wa.me/5535998202344?text=Oi%21%20Vi%20o%20site%20da%20Barbearia%20Camisa%2010%20e%20quero%20conversar.">Falar com a Fachada</a>
 </aside>
 <header class="hero"><div class="wrap">
-  <div class="sign"><h1>Barbearia camiza 10</h1><p>Corte, barba e cuidado, no seu horário.</p></div>
+  <div class="sign"><h1>Barbearia Camisa 10</h1><p>Corte, barba e cuidado, no seu horário.</p></div>
   <p class="where">GO</p>
   <div class="actions">
-    <a class="btn" href="https://wa.me/5564999536758?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20camiza%2010%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">Chamar no WhatsApp</a>
-    <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Barbearia%20camiza%2010%20Rua%20Miguel%20de%20Assis%2C%201720%2C%20GO">Como chegar</a>
+    <a class="btn" href="https://agendin.com.br/barbeariacamisa10jti">Agendar horário</a>
+    <a class="btn ghost" href="https://wa.me/5564999536758?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20Camisa%2010%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">Chamar no WhatsApp</a>
+    <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Barbearia%20Camisa%2010%20Rua%20Miguel%20de%20Assis%2C%201720%2C%20GO">Como chegar</a>
     
   </div>
 </div></header>
+<div class="wrap"><figure class="photo"><img src="../../stock/barbearia.jpg" alt="" width="1400" height="800"><figcaption>Imagem ilustrativa</figcaption></figure></div>
 <main>
 <section class="about"><div class="wrap"><h2>Sobre nós</h2><p>Atendimento caprichado, ambiente confortável e profissionais que entendem o estilo de cada cliente.</p></div></section>
 <section class="services"><div class="wrap"><h2>Serviços</h2><ul><li><h3>Corte masculino</h3><p>Na tesoura ou na máquina, do clássico ao degradê.</p></li>
 <li><h3>Barba</h3><p>Modelagem, toalha quente e acabamento na navalha.</p></li>
 <li><h3>Corte infantil</h3><p>Com paciência e sem pressa.</p></li>
 <li><h3>Sobrancelha e acabamentos</h3><p>O detalhe que completa o visual.</p></li></ul></div></section>
+
 <section><div class="wrap info">
   <div><h2>Horário</h2><dl><dt>Seg a sáb</dt><dd>08:30 às 12:30 e 14:00 às 19:30</dd></dl></div>
-  <div><h2>Onde estamos</h2><p>Rua Miguel de Assis, 1720, GO</p><p style="margin-top:.5rem">WhatsApp: <a href="https://wa.me/5564999536758?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20camiza%2010%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">(64) 99953-6758</a></p>
-  <p style="margin-top:1rem"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Barbearia%20camiza%2010%20Rua%20Miguel%20de%20Assis%2C%201720%2C%20GO">Abrir no mapa</a></p></div>
+  <div><h2>Onde estamos</h2><p>Rua Miguel de Assis, 1720, GO</p><p style="margin-top:.5rem">WhatsApp: <a href="https://wa.me/5564999536758?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20Camisa%2010%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">(64) 99953-6758</a></p>
+  <p style="margin-top:1rem"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Barbearia%20Camisa%2010%20Rua%20Miguel%20de%20Assis%2C%201720%2C%20GO">Abrir no mapa</a></p></div>
 </div></section>
 </main>
-<footer><div class="wrap">© Barbearia camiza 10. Site feito pela Fachada.</div></footer>
-<a class="float" href="https://wa.me/5564999536758?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20camiza%2010%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." aria-label="Conversar no WhatsApp">WhatsApp</a>
+<footer><div class="wrap">© Barbearia Camisa 10. Site feito pela Fachada. Foto ilustrativa: National Photo Company Collection, Public domain (Wikimedia Commons).</div></footer>
+<a class="float" href="https://wa.me/5564999536758?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20Camisa%2010%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." aria-label="Conversar no WhatsApp">WhatsApp</a>
 </body>
 </html>
